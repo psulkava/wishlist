@@ -1,4 +1,7 @@
-# README
+# Wishlist
+
+Ruby on Rails web app to organize and store a BiS item list.
+Currently in development.
 
 This README would normally document whatever steps are necessary to get the
 application up and running.
