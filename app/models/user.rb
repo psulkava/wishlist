@@ -10,7 +10,9 @@ class PasswordValidator < ActiveModel::EachValidator
     if value =~ number then count += 1 end
     if value =~ special then count += 1 end
     if count < 3
-      record.errors[attribute] << ("password is not secure enough")
+      record.errors[attribute] << ("is not secure enough, must have at least 3 of the following:
+                                    lowercase letter, uppercase letter,
+                                    number, or symbol")
     end
   end
 end
