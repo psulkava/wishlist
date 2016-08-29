@@ -19,7 +19,7 @@ class UsersLoginTest < ActionDispatch::IntegrationTest
   test "login with valid information followed by logout" do
     get login_path
     post login_path, params: { session: { email:    @user.email,
-                                          password: 'password' } }
+                                          password: 'Password123' } }
     assert_redirected_to @user
     follow_redirect!
     assert_template 'users/show'
